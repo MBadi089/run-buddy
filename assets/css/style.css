@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* apply styles to <header> */
@@ -45,3 +46,88 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     
 }
+/* Applys styles to the Footer */
+
+footer {
+    background:#fce138;
+    width: 1920px;
+    padding: 40px 35px;
+}
+
+footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: #024e76;
+}
+
+section {
+    padding: 60px;
+    
+}
+
+/*Hero Style Start */
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+/*Hero Style Ends */
+
+/* Will give the form style */
+.hero-form {
+    background-color: #fce138;
+    padding: 20px;
+    width: 500px;
+    color: #024e76;
+    border: solid 3px #024e76;
+    position: absolute;
+    bottom: 120px;
+    right: 140px;
+}
+/*Gives the h3 "Get Started Today increase font size and made sure the letters wouldn't overlap over the rest of the form */
+.hero-form h3 {
+    font-size: 24px;
+    margin: 0;
+}
+/*Creating more space to make it readible */
+.hero-form p {
+    margin: 5px 0 15ox 0;
+}
+
+/*Calls on the form-clas in HTML and making the entire form readible */
+.form-input {
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+}
+/*This will target "Enter Full Name, Enter Email Address, Enter Telephone Number, and I acknowledge..years of age" */
+.hero-form label {
+    margin: 0 5px;
+}
+/*The "Get Running" button will be styled */
+.hero-form button {
+    color: #fce138;
+    background-color: #024e76;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/*Hero Style Ends */
