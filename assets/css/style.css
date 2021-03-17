@@ -136,16 +136,7 @@ section {
 .intro {
     text-align: center;
 }
-/*This will style the h2 intro "What We Do" */
-.intro h2 {
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #fce138;
-    display: inline-block;
-}
+
 /*This will clean up the paragraph in the "What We Do" part of the webpage */
 .intro p {
     line-height: 1.7;
@@ -153,4 +144,52 @@ section {
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
+}
+/*This will center and add a background to the "What You Do" section */
+.steps {
+    text-align: center;
+    background: #fce138;
+}
+
+/*This will style the "What We Do" and the "What You Do" part of the webpage */
+.section-title {
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display: inline-block;
+    border-bottom: 3px solid;
+}
+
+.primary-border {
+    border-color: #fce138;
+}
+
+.secondary-border {
+    border-color: #39a6b2;
+}
+
+/*This will clean-up the size and color elements in the "What You Do" section to step 4 */
+.steps div {
+    margin-bottom: 80px;
+}
+
+.steps img {
+    width: 15%;
+    margin: 10px 0;
+}
+
+.steps h3 {
+    color: #024e76;
+    font-size: 46px;
+    margin-top: 10px;
+}
+
+.steps p {
+    color: #39a6b2;
+    font-size: 23px;
+}
+/*This will target the h3 that have <span> in them and increase the font size (step1-4) */
+.steps span {
+    font-size: 38px;
 }
