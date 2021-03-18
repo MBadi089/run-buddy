@@ -50,7 +50,7 @@ body {
 
 footer {
     background:#fce138;
-    width: 1920px;
+    width: 1903px;
     padding: 40px 35px;
 }
 
@@ -263,6 +263,7 @@ section {
 .contact-info iframe {
     width: 400px;
     height: 400px;
+   
 }
 /*This will change the contact info and place the text to the left side and create a two column appearance */
 .contact-info div {
@@ -272,4 +273,21 @@ section {
     text-align: left;
     margin: 30px 0 0 60px;
     color: white;
+   
+
+} 
+.contact-info h3 {
+    color: #fce138;
+    font-size: 32px;
 }
+.contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+}
+.contact-info a {
+    color: #fce138;
+}
+/*REACH OUT STYLES END */
