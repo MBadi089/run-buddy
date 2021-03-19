@@ -275,11 +275,11 @@ section {
     color: white;
    
 
-} 
+} /*This changes the h3 (Run Buddy) color and font size */
 .contact-info h3 {
     color: #fce138;
     font-size: 32px;
-}
+} /*This targets two elements (.contact-info p, .contact-info address) use a "," to target more elements and styles this two elements */ 
 .contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
@@ -287,6 +287,7 @@ section {
     font-style: normal;
     color: white;
 }
+/*This changes the "info@runbuddy.io" to a yellow font color */
 .contact-info a {
     color: #fce138;
 }
