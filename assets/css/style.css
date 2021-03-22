@@ -177,32 +177,38 @@ section {
 /*Hero Style Ends */
 
 /*This will center the "What We Do" h2 in the website */
-.intro {
-    text-align: center;
-}
+/*removed entire CSS rule for ".intro { text-align: center; } for v2.0 (flexbox webpage update) */
+
 
 /*This will clean up the paragraph in the "What We Do" part of the webpage */
+/*added "text-align: center;" for the v2.0 (flexbox webpage update) */
 .intro p {
     line-height: 1.7;
     color: #39a6b2;
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
+    text-align: center;
 }
 /*This will center and add a background to the "What You Do" section */
+/*removed "text-align: center;" for v2.0 (flexbox webpage update) */
 .steps {
-    text-align: center;
+    
     background: #fce138;
 }
 
 /*This will style the "What We Do" and the "What You Do" and the "Reach Out" parts of the webpage */
+/*removed "display: inline;", "padding: 0 100px 20px 100px;", and "margin-bottom: 35px;" for v2.0 (for flexbox webpage update) */
+/*added padding-bottom: 20px;", "text-align: center;", "margin: 0 auto 35px auto;", "width: 50%;" for v2.0 */
 .section-title {
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
     border-bottom: 3px solid;
+
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
 }
 
 
@@ -215,34 +221,63 @@ section {
 }
 
 /*This will clean-up the size and color elements in the "What You Do" section to step 4 */
-.steps div {
-    margin-bottom: 80px;
-}
+/*removed CSS rules ".steps div {}", ".steps img {}", ".steps span {}" */
 
-.steps img {
-    width: 15%;
-    margin: 10px 0;
-}
-
+/*added "flex: 1 30%;" for v2.0 (flexbox webpage update) */
 .steps h3 {
     color: #024e76;
     font-size: 46px;
     margin-top: 10px;
+    flex: 1 30%; 
 }
 
-.steps p {
-    color: #39a6b2;
-    font-size: 23px;
+/*added a new CSS rule ".step-info {}" for v2.0 (flexbox webpage update) */
+.step-info {
+    flex: 2 70%; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/*added a new CSS rule ".step-img {}" for v2.0 (flexbox webpage update) */
+.step img {
+    flex: 1 12%;
+    margin-right: 20px;
+}
+/*added a new CSS rule ".step-img img {} for v2.0 (flexbox webpage update) */
+.step-img img {
+    max-width: 100%;
+}
+/*added a new CSS rule "/step-text {}" for v2.0 (flexbox webpage update) */
+.step-text {
+    flex: 12;
+}
+
+/*changing ".steps p" to ".steps-text h4 {} */
+/*added "font-size: 23px" to "18px", changed color to "0#24e76", and added "line-height: 1.5;" */
+.step-text h4 {
+    color: #024e76;
+    font-size: 18px;
+    line-height: 1.5;
+}
+/*added new CSS rule ".step {}" for v2.0 (flexbox webpage update) */
+.step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 /*This will target the h3 that have <span> in them and increase the font size (step1-4) */
-.steps span {
-    font-size: 38px;
-}
+
 /*This will align the text in the trainers section */
-.trainers {
-    text-align: center;
+/*removed "text-align: center;" for v2.0 (flexbox webpage update) */
+/*.trainers { } */
+
     
-}
+
 
 /*This will add styles to the <article> element for the trainer */
 .trainer {
@@ -293,8 +328,9 @@ section {
     text-align: right;
 }
 /* REACH OUT STYLES START */
+/*removed "text-align: center;" for v2.0 (flexbox webpage update) */
 .contact {
-    text-align: center;
+
     background: #024e76;
     
 }
@@ -334,5 +370,8 @@ section {
 /*This changes the "info@runbuddy.io" to a yellow font color */
 .contact-info a {
     color: #fce138;
+}
+.flex-row {
+    display: flex;
 }
 /*REACH OUT STYLES END */
