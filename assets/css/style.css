@@ -64,25 +64,30 @@ body {
 }
 /* Applys styles to the Footer */
 
+/*Added "display: flex;", "justify-content: space-between;", and "flex-wrap: wrap;" for the v2.0 (for flexbox update) */
+/* removed "width: 1903px;" and copied the exact CSS rule in header to match footer */
 footer {
     background:#fce138;
-    width: 1903px;
-    padding: 40px 35px;
+   
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
+/*removed "display: inline;" for v2.0 (for flexbox update) */
 footer h2 {
-    display: inline;
+    
     color: #024e76;
     font-size: 30px;
     margin: 0;
 }
-
+/*removed "float: right;" for v2.0 (for flexbox update) */
 footer div {
-    float: right;
-    line-height: 1.5;
-    text-align: right;
-}
+    
+     line-height: 1.5;
+     text-align: right; 
 
+}
 footer a {
     color: #024e76;
 }
@@ -93,25 +98,48 @@ section {
 }
 
 /*Hero Style Start */
+/*removed "postion: relative;" and "height: 600px;" for the v2.0 (adding flexbox update to webpage) */
 .hero {
     background-image: url("../images/hero-bg.jpg");
-    height: 600px;
+    
     background-size: cover;
     background-position: center;
-    position: relative;
+
+    /*added flex box properties to declarations */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 }
-/*Hero Style Ends */
+/*added a new CSS rule ".hero-cta" for the v2.0 (adding flexbox update to webpage) */
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+/*added a new CSS rule ".hero-cta h2" for the v2.0 (adding flexbox update to webpage) */
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
+}
 
 /* Will give the form style */
+/*removed "width:500px;", "position:absolute;", "bottom: 120px;", "right: 140px;" for the v2.0 (adding flexbox update to webpage) */
+/*added "width: 40%;" and "margin: 3.5%;" for the v2.0 (adding flexbox update to webpage) */
 .hero-form {
     background-color: #fce138;
     padding: 20px;
-    width: 500px;
     color: #024e76;
     border: solid 3px #024e76;
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
+
+    width: 40%;
+    margin: 3.5%;
+   
 }
 /*Gives the h3 "Get Started Today increase font size and made sure the letters wouldn't overlap over the rest of the form */
 .hero-form h3 {
