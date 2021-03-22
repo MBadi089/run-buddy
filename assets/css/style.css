@@ -33,15 +33,27 @@ header nav {
 
     margin: 7px 0;
 }
+/*Completely removed the CSS rule for "header nav ul li" */
 
-header nav ul li {
-    display: inline;
+/*Added new CSS rule to help improve webpage with flexbox settings */
+/*Added two new property declarations: align-items: center; list-style: none; */
+/*align-items: center; will vertically center the content. */
+/*list-style: none; sets how a list item is styled (bullet points, dashes, etc.) and positioned (indented or outdented). "none" hides the bullet points */
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
+/*Making adjustments for the navigation to make flexbox work better */
+/*changed the "font-size" to 1.55vw. This tells the browser that the font's size should be roughly 1.55% of the window's overall width. */
+/*"vw" = viewport width. It helps with flexible length values in CSS. */
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.55vw;
 }
 
 body {
