@@ -6,10 +6,15 @@
 
 /* apply styles to <header> */
 
+/*Added "display:flex" so it can fit on mobile devices and be adjusted without making the webpage difficult to navigate */
+/*Added "justify-content: space-between;" It distributes all empty space between child elements to keep them evenly spaced apart */
+/*Added "flex-wrap: wrap;" When the webpage resizes the <header> will expand onto a second line if it runs out of room */
 header {
-
+    display: flex;
     padding: 20px 35px;
     background-color: #39a6b2;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header h1 {
@@ -17,7 +22,6 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    display: inline;
 }
 
 header a {
@@ -26,7 +30,7 @@ header a {
 }
 
 header nav {
-    float: right;
+
     margin: 7px 0;
 }
 
