@@ -55,7 +55,7 @@ header nav ul {
 /*changed the "font-size" to 1.55vw. This tells the browser that the font's size should be roughly 1.55% of the window's overall width. */
 /*"vw" = viewport width. It helps with flexible length values in CSS. */
 header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px; /*added padding and removed margin. This will create a tighter navigation menu */
     font-weight: lighter;
     font-size: 1.55vw;
 }
@@ -107,6 +107,9 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    /*added an align-items: flex-start */
+    align-items: flex-start;
     
 }
 /*added a new CSS rule ".hero-cta" for the v2.0 (adding flexbox update to webpage) */
@@ -116,7 +119,7 @@ section {
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
-    line-height: 1.3;
+    line-height: 1.2; /*changed the line-height to 1.2 instead of 1.3, this will make the text easier to read */
 }
 
 /*added a new CSS rule ".hero-cta h2" for the v2.0 (adding flexbox update to webpage) */
@@ -199,7 +202,7 @@ section {
 /*removed "display: inline;", "padding: 0 100px 20px 100px;", and "margin-bottom: 35px;" for v2.0 (for flexbox webpage update) */
 /*added padding-bottom: 20px;", "text-align: center;", "margin: 0 auto 35px auto;", "width: 50%;" for v2.0 */
 .section-title {
-    font-size: 55px;
+    font-size: 48px; /*changed the font-size to 48px instead of 55px. This will be big enough for all screens. */ 
     color: #024e76;
     border-bottom: 3px solid;
 
@@ -412,3 +415,20 @@ section {
     text-align: right;
 }
 /*REACH OUT STYLES END */
+
+/* Start Media Queries */
+
+/* Media Query for Smaller Desktop Screens and Smaller */
+@media screen and (max-width: 980px) {
+  
+}
+
+/* Media Query for Tablets and Smaller */
+@media screen and (max-width: 768px) {
+   
+}
+
+/*Media Query for Mobile Phones and Smaller */
+@media screen and (max-width: 575px) {
+   
+}
