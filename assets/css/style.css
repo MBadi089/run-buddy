@@ -19,6 +19,14 @@ header {
     background-color: #39a6b2;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 header h1 {
@@ -26,6 +34,7 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -54,10 +63,15 @@ header nav ul {
 /*Making adjustments for the navigation to make flexbox work better */
 /*changed the "font-size" to 1.55vw. This tells the browser that the font's size should be roughly 1.55% of the window's overall width. */
 /*"vw" = viewport width. It helps with flexible length values in CSS. */
-header nav ul li a {
+header nav ul li a:hover {
     padding: 10px 15px; /*added padding and removed margin. This will create a tighter navigation menu */
     font-weight: lighter;
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
 }
 
 /* Applys styles to the Footer */
@@ -110,6 +124,8 @@ section {
 
     /*added an align-items: flex-start */
     align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
     
 }
 /*added a new CSS rule ".hero-cta" for the v2.0 (adding flexbox update to webpage) */
@@ -127,19 +143,22 @@ section {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Will give the form style */
 /*removed "width:500px;", "position:absolute;", "bottom: 120px;", "right: 140px;" for the v2.0 (adding flexbox update to webpage) */
 /*added "width: 40%;" and "margin: 3.5%;" for the v2.0 (adding flexbox update to webpage) */
 .hero-form {
-    background-color: #fce138;
+    background-color: rgba(252, 225, 56, 0.8);
     padding: 20px;
     color: #024e76;
     border: solid 3px #024e76;
 
     width: 40%;
     margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
    
 }
 /*Gives the h3 "Get Started Today increase font size and made sure the letters wouldn't overlap over the rest of the form */
@@ -161,18 +180,26 @@ section {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.form-input:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
 }
 /*This will target "Enter Full Name, Enter Email Address, Enter Telephone Number, and I acknowledge..years of age" */
 .hero-form label {
     margin: 0 5px;
 }
 /*The "Get Running" button will be styled */
-.hero-form button {
+.hero-form button:hover {
     color: #fce138;
     background-color: #024e76;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    border-radius: 10px;
+    background-color: #39a6b2;
 }
 
 /*Hero Style Ends */
@@ -268,11 +295,14 @@ section {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+.step:not(:last-child) {
+    border-bottom: 1px solid #39a6b2;
 }
 /*This will target the h3 that have <span> in them and increase the font size (step1-4) */
 
@@ -391,8 +421,14 @@ section {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
 }
-.contact-form button {
+.contact-form input:focus, .contract-form textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+.contact-form button:hover {
     width: 100;
     border: none;
     background: #fce138;
@@ -400,6 +436,9 @@ section {
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 10px;
+    color: #fce138;
+    background: #39a6b2;
 }
 /*This changes the "info@runbuddy.io" to a yellow font color */
 .contact-info a {
@@ -423,11 +462,13 @@ section {
   header {
       padding-bottom: 0;
       justify-content: center;
+      position: relative;
   }
   
   header h1 {
       width: 100%;
       text-align: center;
+      
   }
 
   header nav ul {
@@ -438,8 +479,10 @@ section {
 
   header nav ul li a {
       font-size: 20px;
+    
+      
   }
-
+  
   footer h2, footer div {
       text-align: center;
       width: 100%
